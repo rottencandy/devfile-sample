@@ -51,12 +51,12 @@ app.use(require('pino-http')({logger: pino}));
 
 app.get('/', (req, res) => {	
   // Use req.log (a `pino` instance) to log JSON:	
-  req.log.info({message: 'Hello from updated devfile Node.js Starter Application!'});		
-  res.send('Hello from updated devfile Node.js Starter Application!');	
+  req.log.info({message: 'Henlo from updated devfile Node.js Starter Application!'});		
+  res.send('Henlo from updated devfile Node.js Starter Application!');	
 });	
 
 app.get('*', (req, res) => {
-  res.status(404).send("Not Found");
+  res.status(404).send("Not Found!");
 });
 
 // Listen and serve.
